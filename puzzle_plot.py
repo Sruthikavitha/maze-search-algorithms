@@ -31,10 +31,9 @@ def plot_puzzle_state(state, step_number=None):
     else:
         plt.title("Puzzle State", fontsize=16)
 
-    plt.show()
+    plt.show(block=True)
 
 
-# ✅ THIS PART MAKES IT RUN
 if __name__ == "__main__":
     initial_state = [
         [1, 2, 3],
@@ -42,3 +41,4 @@ if __name__ == "__main__":
         [6, 7, 8]
     ]
     plot_puzzle_state(initial_state, step_number=1)
+    input("Press Enter to close the window...")
